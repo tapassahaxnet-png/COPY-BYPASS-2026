@@ -1,0 +1,41 @@
+name: bypass_copyright_app
+description: "Production offline Anti-Copyright Video & Audio processor powered by FFmpegKit Full GPL."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core Engine: Full GPL version is REQUIRED because libx264 is under GPL license.
+  # (ffmpeg_kit_flutter_full_gpl bundles libx264, libmp3lame, opus, etc.)
+  ffmpeg_kit_flutter_full_gpl: ^6.0.3
+
+  # Gallery Picker for selecting videos
+  image_picker: ^1.1.2
+
+  # Modern cross-platform Gallery Saver with Android Scoped Storage / MediaStore support
+  gal: ^2.3.0
+
+  # Local temp storage paths
+  path_provider: ^2.1.4
+
+  # Video Preview Player
+  video_player: ^2.9.2
+
+  # Runtime Permissions management (Android 13+ READ_MEDIA_VIDEO & Legacy Storage)
+  permission_handler: ^11.3.1
+
+  # Cupertino icons for standard icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
