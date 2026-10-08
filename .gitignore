@@ -1,0 +1,7 @@
+.dart_tool/
+.idea/
+.packages
+build/
+android/.gradle/
+android/app/build/
+ios/.symlinks/
